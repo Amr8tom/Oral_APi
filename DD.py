@@ -36,3 +36,5 @@ def predict():
           ind = np.argmax(result)
           final_output_prediction= classes[ind]
           print("the model worked well ")
+     
+     return final_output_prediction
