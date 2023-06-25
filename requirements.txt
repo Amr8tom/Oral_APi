@@ -4,3 +4,4 @@ keras
 PIL
 tensorflow
 cv2
+Pillow
