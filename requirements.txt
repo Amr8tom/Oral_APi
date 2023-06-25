@@ -1,4 +1,4 @@
-streamlit>=0.81
+streamlit
 pillow
 opencv-python
 numpy

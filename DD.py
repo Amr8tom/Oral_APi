@@ -1,6 +1,6 @@
 #from flask import Flask , request , render_template ,url_for,jsonify
 from tensorflow.keras.models import load_model
-from PIL import Image
+from pillow import Image
 import numpy as np
 #from tensorflow import keras
 import streamlit as st
