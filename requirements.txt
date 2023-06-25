@@ -1,7 +1,5 @@
-streamlit
+streamlit>=0.81
+pillow
+opencv-python
 numpy
-keras
-PIL
 tensorflow
-cv2
-Pillow
