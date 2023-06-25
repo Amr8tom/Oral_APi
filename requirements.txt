@@ -3,4 +3,3 @@ pillow
 numpy
 tensorflow
 keras
-cv2

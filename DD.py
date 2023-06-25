@@ -5,9 +5,9 @@ import numpy as np
 from tensorflow import keras
 from keras import models
 import streamlit as st
-import cv2
+#import cv2
 def preprossing(image):
-     Image=cv2.resize(image,(50,50))
+     Image=Image.resize(image,(50,50))
      Image=Image.astype("float32")/255.
      Image=Image.reshape((1, ) +Image.shape)
      return Image
