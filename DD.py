@@ -1,8 +1,9 @@
 #from flask import Flask , request , render_template ,url_for,jsonify
-from tensorflow.keras.models import load_model
-from pillow import Image
+#from tensorflow.keras.models import load_model
+from PIL import Image
 import numpy as np
-#from tensorflow import keras
+from tensorflow import keras
+from keras import models
 import streamlit as st
 import cv2
 def preprossing(image):
@@ -13,7 +14,7 @@ def preprossing(image):
 
 st.title(" Oral Cancer Detection ")
 image_file= st.file_uploader("image upload",type=["png","jpg","jpeg"])
-my_model= load_model("D:\DMC Project\github\oral_cancer\model87.h5")
+my_model= models.load_model("D:\DMC Project\github\oral_cancer\model87.h5")
 input_shape = my_model.layers[0].input_shape[1:]
 print('Input shape---------------------------------------:', input_shape)
 def load_image(imageFile):
