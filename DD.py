@@ -21,7 +21,7 @@ my_model.compile(optimizer="adam",
                  loss=keras.losses.CategoricalCrossentropy(reduction='sum_over_batch_size'), 
                  metrics=["accuracy"])
 
-input_shape = my_model.layers[0].input_shape[1:]
+input_shape = my_model.layers[0].input_dtype[1:]
 print('Input shape---------------------------------------:', input_shape)
 
 def load_image(imageFile):
